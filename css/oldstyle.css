@@ -1,0 +1,760 @@
+/* font-family: 'Merriweather', serif;
+
+font-family: 'Play', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+
+}
+
+body{
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.middle{
+    
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 60px;
+    transform: translate(-50%, -50%);
+}
+.middle span{
+    font-family: 'Play', sans-serif;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 13px;
+}
+.mouse{
+    margin-left: 24px;
+    width: 20px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.555);
+    border-radius: 60px;
+    margin-bottom: 10px;
+}
+.mouse::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.555);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse{
+    from{
+        opacity: 1;
+        top: 10px;
+    }
+    to{
+        opacity: 0;
+        top: 30px;
+    }
+}
+
+
+section{
+    display: flex;
+    height: 100vh;
+}
+
+
+.homepage{
+    background-image: url('/assets/images/background-1.png');
+
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    display: block;
+    background-attachment: fixed;
+}
+.homepage .header {
+
+    width: 100%;
+    height: 15vh;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+
+}
+.homepage .header .logo{
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.homepage .header .logo img{
+    width: 150px;
+    margin-left: 100px;
+
+}
+.homepage .header .downloadCV{
+    float: right;
+}
+.homepage .header .contentHeader{
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
+}
+.homepage .header .contentHeader button{
+    color: #fff;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.164);
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+
+}
+.homepage .header .contentHeader button span{
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.homepage .header .contentHeader button img{
+    width: 16px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+
+}
+.homepage .header .contentHeader button:hover{
+    background-color: #b2b2b2ea;
+    transition: .3s;
+    border: 1px solid #e7e7e7;
+}
+
+nav{
+
+    display: inline-block;
+    padding: 10px 10px;
+    margin-right: 200px;
+    
+    
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li a{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+nav ul li:hover{
+    color: #fff;
+    text-shadow: -2px 2px 10px #E28967;
+    transition: .3s;
+}
+
+.content{
+    text-align: center;
+    width: 70%;
+    height: 80vh;
+    margin-right: 40px;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+.content .socialMedia
+{
+    position: absolute;
+    left: 0;
+}
+.content .socialMedia ul{
+    list-style: none;
+    padding: 100px;
+    margin-top: 40px;
+}
+.content .socialMedia ul li i{
+    font-size: 23px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.226);
+    transition: .2s;
+
+}
+.content .socialMedia ul li i:hover{
+    transition: .2s;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px #E28967;
+}
+.content h1{
+    z-index: 9;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-45%,50%);
+    font-family: 'Merriweather', serif;
+    font-size: 90px;
+    font-weight: 300;
+    background: #B5F59B;
+    background: -webkit-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: -moz-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 800px;
+}
+
+.content img{
+    transition: .5s;
+    width: 550px;
+    margin-top: -30px;
+    margin-left: 50px;
+
+}
+
+.content p{
+    margin-top: 10px;
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.589);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s;
+}
+.content p:hover{
+    transition: .2s;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #000;
+}
+.AboutMe{
+   
+    background-image: url('/assets/images/AboutMeBG.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.aboutContent{
+    width: 80%;
+    height: 80vh;
+    position: relative; 
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.aboutContent .pictureFrame{
+    width: 400px;
+    height: 400px;
+    background: url("/assets/images/frame.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 30%;
+    transform: translateX(-50%, -50%);
+    display: inline-block;
+    
+}
+.aboutContent .pictureFrame img{
+    width: 500px;
+    margin-top: -150px;
+}
+.aboutContent .aboutmeText{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+.aboutContent .aboutmeText h2{
+    margin-bottom: 60px;
+    margin-top: -50px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.644);
+}
+.aboutContent .aboutmeText h1{
+    background: #B5F59B;
+    background: -webkit-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: -moz-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+.aboutContent .aboutmeText .textFrame{
+    background: url("/assets/images/textframe.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px 20px 20px 0;
+    width: 98%;
+    height: 50vh;
+}
+.aboutContent .aboutmeText  p{
+    line-height: 23px;
+    letter-spacing: 0.1px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 5px #000;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.aboutContent .aboutmeText .viewHobbies{
+    margin-top: 40px;
+}
+.aboutContent .aboutmeText .viewHobbies img
+{  
+    width: 80px;
+    position: absolute;
+    left: 0;
+    animation: toright 2s infinite;
+
+
+}
+.aboutContent .aboutmeText .viewHobbies a{
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    background: #ff8267;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+    transition: .3s;
+    margin-left: 100px;
+}
+.aboutContent .aboutmeText .viewHobbies a:hover{
+    transition: .3s;
+    background: #d8674d;
+}
+
+@keyframes toright{
+    from{
+
+        margin-left: 5px;
+    }
+    to{
+
+        margin-left: 15px;
+    }
+    
+}
+
+
+
+
+ .letsworktogether{
+    background-image: url('/assets/images/hireme.png');
+    background-size: 100% 40vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.letsworktogether .hiremecontent{
+    margin-top: -10px;
+}
+.letsworktogether .hiremecontent h2{
+    margin-bottom: 20px;
+
+}
+.letsworktogether .hiremecontent p{
+    margin-bottom: 20px;
+
+}
+.letsworktogether .hiremecontent button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #ff8267;
+    color: #fff;
+
+}
+
+
+.Skills{
+    background-image: url('/assets/images/skills.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    padding: 100px;
+    color: #fff;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+
+}
+.Skills .textSkills h2{
+    margin-bottom: 50px;
+    margin-top: -60px;
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: 500;
+
+
+}
+
+.Skills .textSkills h1{
+    background: #B5F59B;
+    background: -webkit-linear-gradient(to right, #B5F59B 0%, #E28967 30%, #F59671 100%);
+    background: -moz-linear-gradient(to right, #B5F59B 0%, #E28967 30%, #F59671 100%);
+    background: linear-gradient(to right, #B5F59B 0%, #E28967 30%, #F59671 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.Skills .main{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-top: 20px;
+
+
+}
+.Skills .main li{
+    display: inline-block;
+
+}
+.Skills .main .contentSkills{
+
+    color: #fff;
+    position: absolute;
+    left: 0;
+    display: none;
+    padding: 30px;
+    top: 40px;
+}
+
+
+.Skills .main [id^="label"]:checked~.contentSkills{
+    display: block;
+}
+
+.Skills .main input[type="radio"]{
+    display: none;
+
+}
+.Skills .main label{
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #f0f0f07d;
+}
+
+.Skills .main [id^="label"]:checked + label{
+    display: block;
+    color: #fff;
+    transition: .2s;
+
+}
+.Skills .main .contentSkills .innerContentSkills{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.Skills .main .contentSkills .leftContent{
+    width: 35%;
+    float: left;
+
+}
+.Skills .main .contentSkills .leftContent img{
+    width: 300px;
+
+    margin-right: 200px;
+}
+.Skills .main .contentSkills .rightContent{
+    width: 65%;
+    float: right;
+
+}
+.Skills .main .contentSkills .rightContent .skills-bar{
+    width: 800px;
+    
+
+}
+.Skills .main .contentSkills .rightContent .skills-bar .bar{
+    margin: 20px 80px;
+}
+.Skills .main .contentSkills .rightContent .skills-bar .bar:first-child{
+    margin-top: 0;
+}
+.Skills .main .contentSkills .rightContent .skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.Skills .main .contentSkills .rightContent .skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+animation: showText 0.5s 1s linear forwards;
+
+}
+
+@keyframes showText {
+100%{
+    opacity: 1;
+}
+}
+.Skills .main .contentSkills .rightContent .skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                                 rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background-color: #d8674d;
+    position: absolute;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.bar .progress-line.php span::after{
+    content: "85%";
+}
+.bar .progress-line.html span::after{
+    content: "90%";
+}
+.bar .progress-line.css span::after{
+    content: "80%";
+}
+.bar .progress-line.bootstrap span::after{
+    content: "85%";
+}
+.bar .progress-line.javascript span::after{
+    content: "73%";
+}
+.bar .progress-line.mysql span::after{
+    content: "80%";
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    top: -28px;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.bar .progress-line.php span{
+    width: 85%;
+}
+.bar .progress-line.html span{
+    width: 90%;
+}
+.bar .progress-line.css span{
+    width: 80%;
+}
+.bar .progress-line.bootstrap span{
+    width: 85%;
+}
+.bar .progress-line.javascript span{
+    width: 73%;
+}
+.bar .progress-line.mysql span{
+    width: 80%;
+}
+
+
+/* Graphic Design */
+.bar .progress-line.photoshop span{
+    width: 85%;
+}
+.bar .progress-line.adobexd span{
+    width: 70%;
+}
+.bar .progress-line.photoshop span::after{
+    content: "85%";
+}
+.bar .progress-line.adobexd span::after{
+    content: "70%";
+}
+/* Graphic Design */
+
+
+/* Game Development  */
+.bar .progress-line.graphicart span{
+    width: 89%;
+}
+.bar .progress-line.unity span{
+    width: 96%;
+}
+.bar .progress-line.graphicart span::after{
+    content: "89%";
+}
+.bar .progress-line.unity span::after{
+    content: "96%";
+}
+.bar .progress-line.animation span{
+    width: 95%;
+}
+.bar .progress-line.musiceditor span{
+    width: 88%;
+}
+.bar .progress-line.animation span::after{
+    content: "95%";
+}
+.bar .progress-line.musiceditor span::after{
+    content: "88%";
+}
+.bar .progress-line.csharp span{
+    width: 80%;
+}
+.bar .progress-line.csharp span::after{
+    content: "80%";
+}
+/* Game Development */
+
+/* Extra Skills */
+
+.bar .progress-line.filmora span{
+    width: 85%;
+}
+.bar .progress-line.filmora span::after{
+    content: "85%";
+}
+.bar .progress-line.python span{
+    width: 78%;
+}
+.bar .progress-line.python span::after{
+    content: "78%";
+}
+.bar .progress-line.java span{
+    width: 70%;
+}
+.bar .progress-line.java span::after{
+    content: "70%";
+}
+.bar .progress-line.androidstudio span{
+    width: 80%;
+}
+.bar .progress-line.androidstudio span::after{
+    content: "80%";
+}
+/* Extra Skills */
+
+
+
+.Skills .main .contentSkills .rightContent .iconSkills{
+    float: left;
+}
+.Skills .main .contentSkills .rightContent .iconSkills img{
+    width: 48px;
+    opacity: 0;
+    animation: showIcons 0.5s 1s linear forwards;
+
+}
+
+@keyframes showIcons {
+100%{
+    opacity: 1;
+}
+}
+
+
+/* .Project{
+    background: turquoise;
+} */
+.Ecertificates{
+    background-image: url('/assets/images/ecert.png');
+    background-size: 100% 120vh;
+    background-repeat: no-repeat;
+    padding: 100px;
+    color: #fff;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+.Ecertificates .centerText{
+    text-align: center;
+}
+
+.Ecertificates .centerText h2{
+    margin-bottom: 40px;
+    margin-top: -50px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.644);
+}
+.Ecertificates .centerText h1{
+    background: #B5F59B;
+    background: -webkit-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: -moz-linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    background: linear-gradient(to right, #B5F59B 0%, #E28967 57%, #F59671 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+}
+.Ecertificates .gallery{
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.Ecertificates .gallery img{
+    transition: 1s;
+    margin: 10px;
+    width: 320px;
+}
+
+.Ecertificates .gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.Contact{
+    background: red;
+}
