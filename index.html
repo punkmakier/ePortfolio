@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&family=Noto+Serif:ital,wght@1,700&family=Patua+One&family=Volkhov:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <title>M.A.C e-PORTFOLIO</title>
+</head>
+
+<body>
+    <div class="middle">
+      
+        <span></span>
+        <div class="mouse"></div>
+    </div>
+
+    <!-- HEADER AND HOMEPAGE -->
+    <div class="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand _logo" href="#"><img src="assets/images/logo.png" alt="" width="220"></a>
+                <button style="font-size: 30px; border: none;;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav active ml-auto _styleNavUl">
+                    <li class="nav-item _navStyleLi">
+                      <a class="nav-link text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item _navStyleLi">
+                      <a class="nav-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item _navStyleLi">
+                      <a class="nav-link text-white" href="#skills">Project</a>
+                    </li>
+                    <li class="nav-item _navStyleLi">
+                        <a class="nav-link text-white" href="#ecertficate">E-Certificate</a>
+                      </li>
+                      <li class="nav-item _navStyleLi">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                      </li>
+                      <li class="nav-item _styleNavDownloadCV">
+                        <div class="downloadCV">
+                            <a href="cv/Carba_MarkAllan_STI_WNU.pdf" download class="_btnDownloadCV">Download CV <i class="fa-solid fa-arrow-down-long" style="margin-left: 10px;"></i></a>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+    <div class="homepage container-fluid">
+        <div class="container _homepageContent">
+            <div class="imagePerson">
+                <img  data-aos="fade-up" data-aos-delay="400" src="assets/images/studentmark_sub_sub.png" width="800" style="margin-top: -40px;">
+            </div>
+            
+            <div class="socialMedia">
+              <ul>
+                  <li><a href="https://www.facebook.com/Makier2011/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+                  <li><a href="https://www.instagram.com/punkmakier/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/punkmakier" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>
+              </ul>
+            </div>
+            <div class="contentText">
+                <h1 class="personName">Mark Allan Carba</h1>
+                <p>Web Developer // Graphic Designer // Game Developer</p>
+      
+                
+            </div>
+         
+
+
+     
+        </div>
+    </div>
+  <!-- HEADER AND HOMEPAGE -->
+
+
+    <!-- ABOUT ME -->
+        <div id="about" class="about">
+            <div class="container">
+                <div class="aboutContent">
+                    <img class="imageMakier" data-aos="fade-right"  data-aos-delay="500" src="assets/images/makier.png" alt="">
+                </div>
+                <div class="aboutContent _aboutContentText" data-aos="fade-left">
+
+                    <h2>ABOUT ME</h2>
+                    <h1>This above all:<br>
+                      to thine own self be true.</h1>
+                    <p>Hi! My name is Mark Allan Carba I am graduating student at STI West Negros University taking BSIT. I am experience in Game Development using Unity with over 2 years of experience in corporate environments. Skilled handling multiple task from back-end coding task to front-end design. Proven success record in seeing game and web developer task from start to finish. Aside from being hardworking in development I have hobbies also.<br><br> Click the button to find out :)</p>
+
+                    <div class="viewHobbies">
+                      <img  src="assets/icons/rightarrow.png">
+                      <button id="popHobbies">View<br>Hobbies</button>
+                    </div>
+                
+                  </div>
+            </div>
+        </div>
+    <!-- ABOUT ME -->
+
+
+
+    <!-- SKILLS -->
+        <div id="skills" class="skills">
+          <div class="skillsIntro">
+            <h2>SKILLS</h2>
+            <h1>With hard work and effort,<br>
+              you can achieve anything.</h1>
+          </div>
+
+            <ul class="main">
+              <li>
+                <input type="radio" name="tab" id="label-1" checked>
+                <label for="label-1">Web Development</label>
+                <div class="_content">
+                  <div class="contentLeft">
+                    <img src="assets/images/webPoster.png" width="300" alt=""><br><br><br>
+                    <button id="popWebProject" class="_viewProject" id="btnViewProject">View Project</button>
+                  </div>
+
+                  <div class="contentRight">
+                    <div class="skills-bar">
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/html.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info ">
+                            <span>HTML</span>
+                          </div>
+                          <div class="progress-line html"><span></span></div>
+                        </div>
+            
+                      </div>
+
+
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/css.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>CSS</span>
+                          </div>
+                          <div class="progress-line css"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/javascript.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>JavaScript</span>
+                          </div>
+                          <div class="progress-line javascript"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/bootstrap.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Bootstrap</span>
+                          </div>
+                          <div class="progress-line bootstrap"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/php.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>PHP</span>
+                          </div>
+                          <div class="progress-line php"><span></span></div>
+                        </div>
+            
+                      </div>
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/mysql.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>MySQL</span>
+                          </div>
+                          <div class="progress-line mysql"><span></span></div>
+                        </div>
+            
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <input type="radio" name="tab" id="label-2">
+                <label for="label-2">Graphic Designs</label>
+                <div class="_content">
+                  <div class="contentLeft">
+                    <img src="assets/images/graphicPoster.png" width="300" alt=""><br><br><br>
+                    <button id="popGraphicProject" class="_viewProject" id="btnViewProject">View Project</button>
+                  </div>
+
+                  <div class="contentRight">
+                    <div class="skills-bar">
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/photoshop.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info ">
+                            <span>Photoshop</span>
+                          </div>
+                          <div class="progress-line photoshop"><span></span></div>
+                        </div>
+            
+                      </div>
+
+
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/adobexd.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>AdobeXD</span>
+                          </div>
+                          <div class="progress-line adobexd"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                 
+                </div>
+              </li>
+
+
+
+              <li>
+                <input type="radio" name="tab" id="label-3">
+                <label for="label-3">Game Development</label>
+                <div class="_content">
+                  <div class="contentLeft">
+                    <img src="assets/images/gamedevPoster.png" width="300" alt=""><br><br><br>
+                    <button id="popGameProject" class="_viewProject" id="btnViewProject">View Project</button>
+                  </div>
+
+                  <div class="contentRight">
+                    <div class="skills-bar">
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/unitygameengine.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info ">
+                            <span>Unity Game Engine</span>
+                          </div>
+                          <div class="progress-line unity"><span></span></div>
+                        </div>
+            
+                      </div>
+
+
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/chashtag.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>C#</span>
+                          </div>
+                          <div class="progress-line chashtag"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/graphicdesign.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Digital Arts</span>
+                          </div>
+                          <div class="progress-line digitalArts"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/animation.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Animation</span>
+                          </div>
+                          <div class="progress-line animation"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/musiceditor.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Music/Audio Mixer</span>
+                          </div>
+                          <div class="progress-line musiceditor"><span></span></div>
+                        </div>
+            
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+
+              <li>
+                <input type="radio" name="tab" id="label-4">
+                <label for="label-4">Others</label>
+                <div class="_content">
+                  <div class="contentLeft">
+                    <img src="assets/images/othersPoster.png" width="300" alt=""><br><br><br>
+                    <button id="popOthersProject" class="_viewProject" id="btnViewProject">View Project</button>
+                  </div>
+
+                  <div class="contentRight">
+                    <div class="skills-bar">
+
+                      <div class="bar">
+
+                        <div class="_barInner iconSkills">
+                          <img src="assets/icons/python.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info ">
+                            <span>Python</span>
+                          </div>
+                          <div class="progress-line python"><span></span></div>
+                        </div>
+            
+                      </div>
+
+
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/java.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Java</span>
+                          </div>
+                          <div class="progress-line java"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/androidStudio.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Android Studio</span>
+                          </div>
+                          <div class="progress-line androidstudio"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      <div class="bar">
+
+                        <div class="_barInner">
+                          <img src="assets/icons/filmora.png" alt="">
+                        </div>
+
+                        <div class="_barInnerRight">
+                          <div class="info">
+                            <span>Video Editting using Filmora</span>
+                          </div>
+                          <div class="progress-line filmora"><span></span></div>
+                        </div>
+            
+                      </div>
+
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+              
+
+            </ul>
+
+        </div>
+    <!-- SKILLS -->
+
+
+    <!-- MODAL SKILLS -->
+    <div id="modalShowSkills" class="modalSkills">
+      <button id="closeModalSkills" class="closeIconModal">X</button>
+    </div>
+    <!-- MODAL END -->
+
+    <!-- HIRE ME -->
+      <div class="hireMe">
+        <div class="contentHireme">
+          <h2>Let's Work Together</h2>
+          <p>I’m available for freelancer projects. Hire me and get your project done.</p><br>
+          <a href="#contact">HIRE ME</a>
+        </div>
+
+      </div>
+    <!-- HIRE ME END -->
+
+
+    <!-- E-CERTIFICATE -->
+    <div id="ecertficate" class="e_certificates container-fluid">
+      <div class="centertext">
+        <h2>E-CERTIFICATES</h2>
+        <h1>The reward for work well done is the<br>
+           opportunity to do more.</h1>
+      </div>
+      <div data-aos="fade-up" class="gallery">
+        <a href="assets/images/small_photo.png" data-lightbox="mygallery" data-title="PsG (Programmers Guild) STI WNU Certificate of Membership"><img src="assets/images/small_photo.png"></a>
+        <a href="assets/images/angular_cert.png" data-lightbox="mygallery" data-title="Angular Framework E-Certificate"><img src="assets/images/angular_cert.png"></a>
+        <a href="assets/images/computeCloudService_cert_big.png" data-lightbox="mygallery" data-title="Compute Cloud Service E-Certificate"><img src="assets/images/computeCloudService_cert.png"></a>
+        <a href="assets/images/edge_big.png" data-lightbox="mygallery" data-title="Pioneers of Tomorrow: Certificate of Participation"><img src="assets/images/edge_small.png"></a>
+        <a href="assets/images/video_editing_cert.png" data-lightbox="mygallery" data-title="Strategies for Effective Video Editing E-Certificate"><img src="assets/images/video_editing_cert.png"></a>
+        <a href="assets/images/hcia_big_photo.png" data-lightbox="mygallery" data-title="HUAWEI: HCIA-CLOUD Service V2.2 E-Certificate"><img src="assets/images/hcia_small_photo.png"></a>
+        <a href="assets/images/MicrosoftTeams-image.png" data-lightbox="mygallery" data-title="How to Make 2D Game Using Unity and Photoshop Resource Speaker: Mark Allan Carba (myself)"><img src="assets/images/MicrosoftTeams-image.png"></a>
+      </div>
+    </div>
+    <!-- E-CERTIFICATE END-->
+
+
+    <!-- CONTACT ME -->
+    <div id="contact" class="container-fluid contact_container p-0">
+
+      <div class="contact_header" data-aos="fade-right">
+        <h2>GET IN TOUCH</h2>
+        <h1>Got a question?<br>
+          I would love to hear from you!</h1>
+      </div>
+
+      <div class="contact_info" >
+         <div class="_inner_contact">
+           <div class="info">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+             <h5>Phone No.</h5><br>
+             <span>+63 947 155 9441</span>
+           </div>
+           <div class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Location</h5><br>
+            <span>Basdiot, Moalboal Cebu 6032</span>
+          </div>
+          <div class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <h5>Email</h5><br>
+            <span>carbamark@gmail.com</span>
+          </div>
+         </div>
+         <div class="contact_form" data-aos="fade-left" data-aos-delay="500">
+            <div class="inner_contact_form">
+                <div class="inner_content_contact">
+                  <h3>Send me a Message</h3>
+                  <p>Please fill this form.</p>
+   
+                </div>
+            </div>
+
+            <form class="cont_form_set">
+              <div class="form_format">
+                <label for="">Your Name</label><br>
+                <input id="name" type="text" required><br>
+                <label for="">Your Email</label><br>
+                <input id="email" type="email" required><br>
+
+                <label for="">Your Message</label><br>
+                <textarea id="msg" id="" cols="58" rows="6" placeholder="Type your message here..." required></textarea><br>
+     
+                <button id="btn">Send Your Message</button>
+        
+              </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>Ⓒ Copyright M.A.C e-Portfolio | All right reserved</p>
+    </div>
+
+
+    <div id="modalShowContact" class="disableModal">
+      <div class="modal_design">
+          <div class="modal_titleDesign">
+            <h3>Message Sent</h3>
+          </div>
+          <div class="modal_bodyDesign">
+            <p>Your message has been sent.</p>
+          </div>
+          <div class="modal-closeDesign">
+            <button onclick="window.location.reload();">Close</button>
+          </div>
+      </div>
+    </div>
+  
+    <!-- CONTACT ME -->
+
+
+
+    <!-- SHOW HOBBIES -->
+
+    <div class="video_gallery">
+      <span>&times</span>
+      <div class="inner_video_gallery">
+        <div class="video-container">
+          <div class="video"><video src="videos/hobbies/bacolod.mp4" muted></video></div>
+          <div class="video"><video src="videos/hobbies/swimming.mp4" muted></video></div>
+          <div class="video"><video src="videos/hobbies/dance.mp4" muted></video></div>
+          <div class="video"><video src="videos/hobbies/lusno.mp4" muted></video></div>
+          <div class="video"><video src="videos/hobbies/mobile_legends.mp4" muted></video></div>
+          <div class="video"><video src="videos/hobbies/skateboard.mp4" muted></video></div>
+        </div>
+        <div class="popup-videoHobbies">
+          <span>&times</span>
+            <video src="videos/hobbies/bacolod.mp4" muted autoplay controls></video>
+      
+        </div>
+    </div>
+    </div>
+    <!-- SHOW HOBBIES -->
+
+    <!-- PROJECT WEB -->
+    <div class="video_gallery_project_WEB">
+      <span>&times</span>
+      <div class="inner_video_gallery">
+        <div class="video-container_proWEB">
+          <div class="video"><video src="videos/Projects/Web/softybusiness.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Web/money_heist.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Web/gobebo.mp4" muted></video></div>
+        </div>
+        <div class="popup-projWEB">
+          <span>&times</span>
+            <video src="videos/hobbies/bacolod.mp4" muted autoplay controls></video>
+      
+        </div>
+      </div>
+    </div>
+    <!-- PROJECT WEB -->
+
+    
+    <!-- PROJECT GRAPHIC -->
+    <div class="video_gallery_project_GRAPHIC">
+      <span>&times</span>
+      <div class="inner_video_gallery">
+        <div class="video-container_proGRAPHIC">
+          <div class="video"><video src="videos/Projects/Graphics/clip1.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Graphics/clip2.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Graphics/clip3.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Graphics/clip4.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Graphics/clip5.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Graphics/clip6.mp4" muted></video></div>
+        </div>
+        <div class="popup-projGRAPHIC">
+          <span>&times</span>
+            <video src="videos/hobbies/bacolod.mp4" muted autoplay controls></video>
+      
+        </div>
+      </div>
+    </div>
+    <!-- PROJECT GRAPHIC -->
+
+
+        
+    <!-- PROJECT GAME DEVELOPMENT -->
+    <div class="video_gallery_project_GameDev">
+      <span>&times</span>
+      <div class="inner_video_gallery">
+        <div class="video-container_proGameDev">
+          <div class="video"><video src="videos/Projects/Game Dev/game1.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Game Dev/monkey.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Game Dev/game_2.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Game Dev/dino.mp4" muted></video></div>
+          <div class="video"><video src="videos/Projects/Game Dev/game_3.mp4" muted></video></div>3
+ 
+        </div>
+        <div class="popup-projGameDev">
+          <span>&times</span>
+            <video src="videos/hobbies/bacolod.mp4" muted autoplay controls></video>
+      
+        </div>
+      </div>
+    </div>
+    <!-- PROJECT GAME DEVELOPMENT  -->
+
+
+
+        <!-- PROJECT OTHERS-->
+        <div class="video_gallery_project_Others">
+          <span>&times</span>
+          <div class="inner_video_gallery">
+            <div class="video-container_proOthers">
+              <div class="video"><video src="videos/Projects/Others/susana.mp4" muted></video></div>
+              <div class="video"><video src="videos/Projects/Others/pyhon_2.mp4" muted></video></div>
+              <div class="video"><video src="videos/Projects/Others/python.mp4" muted></video></div>
+              <div class="video"><video src="videos/Projects/Others/java.mp4" muted></video></div>
+              <div class="video"><video src="videos/Projects/Others/JBLCF.mp4" muted></video></div>
+            </div>
+            <div class="popup-projOthers">
+              <span>&times</span>
+                <video src="videos/hobbies/bacolod.mp4" muted autoplay controls></video>
+          
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT OTHERS  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+
+    <script>
+      const btn = document.querySelector('#btn');
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+      
+        var name = document.querySelector('#name').value;
+        var email = document.querySelector('#email').value;
+        var msg = document.querySelector('#msg').value;
+        
+        var body = "<span style=font-size:20px; font-weight: 900;><b>Name: </b></span>"  + name +  "<br/><span style=font-size:20px; font-weight: 900;><b>Email: </b></span> " + email + "<br/><br/><br/></br><span style=font-size:20px; font-weight: 900;><b>Message: </b></span> " + msg;
+        
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "klintoiyas@gmail.com",
+        Password : "zpkpvcdkvfzehmys",
+        To : 'carbamark@gmail.com',
+        From : email,
+        Subject : "New Message from " + name,
+        Body : body
+        }).then(
+          message => showModalSuccess()
+        );
+    
+      })
+
+      function showModalSuccess()
+      {
+        const modalShowContact = document.getElementById("modalShowContact");
+        modalShowContact.classList.add('_modal_default');
+        modalShowContact.classList.remove('disableModal');
+      }
+
+    </script>
+
+    <script>
+      let btnViewProj = document.querySelector('#btnViewProject');
+      let modalShowSkills = document.querySelector('#modalShowSkills');
+      let modalClose = document.querySelector('#closeModalSkills');
+      btnViewProj.addEventListener('click', function(){
+        modalShowSkills.classList.add("skillsVisible");
+      })
+      modalClose.addEventListener('click', function(){
+        modalShowSkills.classList.remove('skillsVisible');
+      })
+    </script>
+
+
+
+
+
+    <script>
+      document.querySelectorAll('.video-container video').forEach(vid =>{
+        vid.onclick = () =>{
+          document.querySelector('.popup-videoHobbies').style.display = 'block';
+          document.querySelector('.popup-videoHobbies video').src = vid.getAttribute('src');
+        }
+      });
+      document.querySelector('.popup-videoHobbies span').onclick = () =>{
+        document.querySelector('.popup-videoHobbies').style.display = 'none';
+      
+      }
+
+
+
+      document.querySelector('.video_gallery span').onclick = () =>{
+        document.querySelector('.video_gallery').style.display = 'none';
+      }
+
+      document.querySelector('#popHobbies').onclick = () =>{
+        document.querySelector('.video_gallery').style.display = 'block';
+      }
+
+    </script>
+
+
+
+<script>
+  document.querySelectorAll('.video-container_proWEB video').forEach(vid =>{
+    vid.onclick = () =>{
+      document.querySelector('.popup-projWEB').style.display = 'block';
+      document.querySelector('.popup-projWEB video').src = vid.getAttribute('src');
+    }
+  });
+  document.querySelector('.popup-projWEB span').onclick = () =>{
+    document.querySelector('.popup-projWEB').style.display = 'none';
+  
+  }
+
+
+
+  document.querySelector('.video_gallery_project_WEB span').onclick = () =>{
+    document.querySelector('.video_gallery_project_WEB').style.display = 'none';
+  }
+
+  document.querySelector('#popWebProject').onclick = () =>{
+    document.querySelector('.video_gallery_project_WEB').style.display = 'block';
+  }
+
+</script>
+
+
+<!-- GRAPHIC -->
+<script>
+  document.querySelectorAll('.video_gallery_project_GRAPHIC video').forEach(vid =>{
+    vid.onclick = () =>{
+      document.querySelector('.popup-projGRAPHIC').style.display = 'block';
+      document.querySelector('.popup-projGRAPHIC video').src = vid.getAttribute('src');
+    }
+  });
+  document.querySelector('.popup-projGRAPHIC span').onclick = () =>{
+    document.querySelector('.popup-projGRAPHIC').style.display = 'none';
+  
+  }
+
+
+
+  document.querySelector('.video_gallery_project_GRAPHIC span').onclick = () =>{
+    document.querySelector('.video_gallery_project_GRAPHIC ').style.display = 'none';
+  }
+
+  document.querySelector('#popGraphicProject').onclick = () =>{
+    document.querySelector('.video_gallery_project_GRAPHIC').style.display = 'block';
+  }
+
+</script>
+
+
+<!-- GRAPHIC -->
+
+
+<!-- GAME DEVELOPMENT -->
+<script>
+  document.querySelectorAll('.video_gallery_project_GameDev video').forEach(vid =>{
+    vid.onclick = () =>{
+      document.querySelector('.popup-projGameDev').style.display = 'block';
+      document.querySelector('.popup-projGameDev video').src = vid.getAttribute('src');
+    }
+  });
+  document.querySelector('.popup-projGameDev span').onclick = () =>{
+    document.querySelector('.popup-projGameDev').style.display = 'none';
+  
+  }
+
+
+
+  document.querySelector('.video_gallery_project_GameDev span').onclick = () =>{
+    document.querySelector('.video_gallery_project_GameDev').style.display = 'none';
+  }
+
+  document.querySelector('#popGameProject').onclick = () =>{
+    document.querySelector('.video_gallery_project_GameDev').style.display = 'block';
+  }
+
+</script>
+<!-- GAME DEVELOPMENT -->
+
+
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+<!--  OTHERS -->
+<script>
+  document.querySelectorAll('.video_gallery_project_Others video').forEach(vid =>{
+    vid.onclick = () =>{
+      document.querySelector('.popup-projOthers').style.display = 'block';
+      document.querySelector('.popup-projOthers video').src = vid.getAttribute('src');
+    }
+  });
+  document.querySelector('.popup-projOthers span').onclick = () =>{
+    document.querySelector('.popup-projOthers').style.display = 'none';
+  
+  }
+
+
+
+  document.querySelector('.video_gallery_project_Others span').onclick = () =>{
+    document.querySelector('.video_gallery_project_Others').style.display = 'none';
+  }
+
+  document.querySelector('#popOthersProject').onclick = () =>{
+    document.querySelector('.video_gallery_project_Others').style.display = 'block';
+  }
+
+</script>
+<!-- OTHERS -->
+
+
+
+<!-- PROJECT -->
+
+
+
+
+</body>
+</html>
